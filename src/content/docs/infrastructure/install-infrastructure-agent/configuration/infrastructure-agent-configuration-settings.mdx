@@ -2154,6 +2154,29 @@ If the agent is running in a cloud instance, the agent will try to detect the cl
 <CollapserGroup>
   <Collapser
     className="freq-link"
+    id="log"
+    title="log"
+  >
+    Log is a key-value map usted to configure the Infrastructure agent logger.
+
+    Example as a YAML attribute:
+
+    ```
+    log:
+      file: "/var/log/newrelic-infra/newrelic-infra.log"
+      level: debug
+      forward: true
+    ```
+
+    Example as an environment variable:
+
+    ```
+    NRIA_CUSTOM_ATTRIBUTES='{"<var>customAttribute_1</var>":"<var>SOME_ATTRIBUTE</var>","<var>customAttribute_2</var>": "<var>SOME_ATTRIBUTE_2</var>"}'
+    ```
+  
+  </Collapser>
+  <Collapser
+    className="freq-link"
     id="log-file"
     title="log_file"
   >
